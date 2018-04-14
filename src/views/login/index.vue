@@ -2,7 +2,7 @@
   <div class="login-container">
     <el-form autoComplete="on" :model="loginForm" :rules="loginRules" ref="loginForm" label-position="left" label-width="0px"
       class="card-box login-form">
-      <h3 class="title">vue-element-admin</h3>
+      <h3 class="title">personal admin</h3>
       <el-form-item prop="username">
         <span class="svg-container svg-container_login">
           <icon-svg icon-class="yonghuming" />
@@ -21,10 +21,6 @@
           Sign in
         </el-button>
       </el-form-item>
-      <div class='tips'>
-        <span style="margin-right:20px;">username: admin</span>
-        </span> password: admin</span>
-      </div>
     </el-form>
   </div>
 </template>
@@ -51,8 +47,8 @@ export default {
     }
     return {
       loginForm: {
-        username: 'admin',
-        password: 'admin'
+        username: 'yyf',
+        password: '123456'
       },
       loginRules: {
         username: [{ required: true, trigger: 'blur', validator: validateUsername }],
